@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body {
+    overflow: hidden;
+    background: black;
+}
+.interface {
+    margin: -8px;
+}
+/*----------------------------------*/
+.dialog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: none;
+    border: none;
+    transition: all 0.3s;
+    opacity: 0;
+    width: 800px;
+    text-align: center;
+}
+#canvas {
+    position: absolute;
+    background: black;
+    top: 0px;
+    left: 0px;
+}

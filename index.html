@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/main.css" />
+        <link rel="icon" href="images/strength.jpg" />
+        <title>Dia da Consciência Negra</title>
+    </head>
+    <body>
+        <div class="interface">
+            <canvas id="canvas" width="1000" height="500">
+                <img id="zumbi" src="images/Zumbi.jpg" />
+                <img id="map" src="images/map.png" />
+                <img id="locate" src="images/locate.png" />
+                <img id="strength" src="images/strength.jpg" />
+                <img id="tree" src="images/tree.jpg" />
+                <img id="art" src="images/art.jpg" />
+                <img id="language" src="images/language.jpg" />
+                <img id="dance" src="images/dance.jpg" />
+                <img id="literature" src="images/literature.jpg" />
+                <img id="culinary" src="images/culinary.jpg" />
+                <img id="person" src="images/person.jpg" />
+            </canvas>
+        </div>
+    </body>
+    <script>
+        const canvas= document.getElementById("canvas");
+        const context= canvas.getContext("2d");
+        const target= document.querySelector("div.interface");
+        const width= window.innerWidth - 5;
+        const height= window.innerHeight - 5;
+        const images= {
+            zumbi: document.getElementById("zumbi"),
+            map: document.getElementById("map"),
+            locate: document.getElementById("locate"),
+            strength: document.getElementById("strength"),
+            tree: document.getElementById("tree"),
+            art: document.getElementById("art"),
+            language: document.getElementById("language"),
+            dance: document.getElementById("dance"),
+            literature: document.getElementById("literature"),
+            culinary: document.getElementById("culinary"),
+            person: document.getElementById("person")
+        };
+        canvas.style.top= (height / 2 - 500 / 2).toString() + "px";
+        canvas.style.left= (width / 2 - 1000 / 2).toString() + "px";
+    </script>
+    <script src="src/classes/Dialog.js"></script>
+    <script src="src/main.js"></script>
+</html>
